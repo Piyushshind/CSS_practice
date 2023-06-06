@@ -10,10 +10,7 @@ function App() {
   console.log(ka , 'rerender');
   return (
     <>
-       <button
-       onClick={handle}
-       >po</button>
-       {ka}
+       
     </>
   );
 }
