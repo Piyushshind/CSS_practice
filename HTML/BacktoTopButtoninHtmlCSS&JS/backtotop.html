@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Scroll Top Button</title>
+</head>
+<style>
+	/*Scroll Top Button in Html and CSS*/
+body , html{
+	scroll-behavior: smooth;
+}
+
+#Button{
+	position: absolute;
+	top: 76%;
+	left: 82%;
+	position: fixed;
+	width: 100px;
+	display: none;
+}
+</style>
+
+<body>
+
+	<img src="https://previews.123rf.com/images/khz/khz0801/khz080100099/2460442-old-scroll-background-for-your-messages-and-designs-with-ornaments.jpg" style="width: 100%">
+	<a href="#" id="Button">
+		<img src="https://pbs.twimg.com/profile_images/378800000109924862/605a6c7756beee14fb29dfc75432d2e5_400x400.png" id="button" style="width: 100px">
+	</a>
+
+	<script type="text/javascript">
+
+		var mybutton = document.getElementById("Button");
+
+		window.onscroll = function () { scrollFunction() };
+
+		function scrollFunction() {
+
+			if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+				mybutton.style.display = "block";
+
+			} else {
+				mybutton.style.display = "none";
+			}
+		}
+	</script>
+
+
+
+</body>
+
+</html>
