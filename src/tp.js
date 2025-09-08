@@ -7,8 +7,7 @@ const obj = {
 
 // console.log(Object.getOwnPropertyDescriptor(obj,'name'));
 
-// console.log(Object.defineProperty(obj, 'x', { value: 10, writable: false, enumerable: false, configurable: false })
-);
+// console.log(Object.defineProperty(obj, 'x', { value: 10, writable: false, enumerable: false, configurable: false }));
 // console.log(obj.greet);
 
 // Object.defineProperties(...)
@@ -17,6 +16,7 @@ const user = {
   get full() { return `${this.first} ${this.last}`; },
   set full(name) { [this.first, this.last] = name.split(' '); }
 };
+console.log(user.full); // "Alice Brown"
 user.full = "Alice Brown";
 console.log(user.full); // "Alice Brown"
 
