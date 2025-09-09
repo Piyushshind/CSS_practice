@@ -8,6 +8,7 @@ const obj = {
 
 console.log(Object.defineProperty(obj, 'name', { value: 10, writable: false, enumerable: false, configurable: false }));
 console.log(Object.getOwnPropertyDescriptor(obj, 'x'));
+delete obj.x;
 console.log(obj);
 
 // Object.defineProperties(...)
